@@ -15,13 +15,19 @@ inputText.addEventListener('input',function (event){
 })
 
 // event Listener
-addTodoBtn.addEventListener('click', addTodoAndUpdateCounter);
+addTodoBtn.addEventListener('click', () => {
+    const newTodoValue = newTodoInputField.value.trim();
+    if (newTodoValue !== '') {
+        addTodoAndUpdateCounter(newTodoValue);
+    }
+});
 newTodoInputField.addEventListener('keydown', function (event) {
-    if (event.key === 'Enter') addTodoAndUpdateCounter();
+    if (event.key === 'Enter'&&event.target.value!=='') addTodoAndUpdateCounter();
 })
 
 // event Handler
 function addTodoAndUpdateCounter(){
+
     addTodo();
     console.log(counter);
     counter++;
