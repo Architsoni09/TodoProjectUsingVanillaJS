@@ -1,0 +1,132 @@
+.universalContainer {
+    display: flex;
+    background-image: url(https://wallpapers.com/images/featured/black-abstract-m8kr2hfvrwlt8j5g.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.todoParentContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: black;
+    width: 50%;
+    min-height: 80vh;
+    justify-content: center;
+    border: 5px solid gold;
+    color: gold;
+}
+
+.todoHeader {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    margin: 1% 1% 1%;
+    border-radius: 10px;
+}
+
+.todoContent {
+    display: flex;
+    height: 10%;
+    justify-content: left;
+    align-items: center;
+    font-size: xx-large;
+    margin: 0 1% 1%;
+    border-radius: 10px;
+}
+
+.todos {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    font-size: xx-large;
+    margin: 0 1% 1%;
+    background-color: black;
+    border: 5px solid gold;
+    border-radius: 10px;
+    min-height: 350px;
+}
+
+input {
+    width: 80%;
+    height: 80%;
+    margin-left: 2%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 100%;
+    color: black;
+    background-color: black;
+    overflow: auto;
+}
+
+input:focus {
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+}
+#addTodoButton {
+    height: 6vh;
+    width: auto;
+    margin: auto;
+    background-color: black;
+    color: gold;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#addTodoButton:hover{
+    background-color: gold;
+    color:black;
+    border-color: black;
+}
+.newTodoItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius:10px;
+    padding: 5px;
+    align-items: center;
+}
+.newTodoItem:hover{
+    color: black;
+    background-color:gold;
+}
+.newTodoItem button{
+    width: auto;
+    margin-left: auto;
+    background-color: black;
+    color: gold;
+    border: 2px solid;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.newTodoItem label{
+    margin-left: 5px;
+    align-items: center;
+
+}
+.newTodoItem button:hover {
+    background-color: gold;
+    color:black;
+}
+.checkBox{
+    height: 100%;
+    width: auto;
+}
+.completed{
+    background-color:gold;
+    color:black;
+}
+.todoCounter{
+    display: flex;
+    justify-content: space-around;
+}
+.todoCounter div{
+    display: inline-flex;
+    border: 2px solid;
+}

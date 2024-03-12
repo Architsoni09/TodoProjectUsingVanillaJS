@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body id="universalContainer" class="universalContainer">
+<div id="todoParentContainer" class="todoParentContainer">
+    <div id="todoHeader" class="todoHeader">
+        <p>
+            Todo List
+        </p>
+    </div>
+    <div id="todoContent" class="todoContent">
+        <label for="newTodo"><i class="fa fa-server" style="font-size:36px"></i>
+        </label>
+        <input type="text" id="newTodo" placeholder="Type Your Task Here">
+        <button id="addTodoButton" type="submit">Add Todo</button>
+    </div>
+
+    <div id="todos" class="todos">
+    </div>
+    <div class="todoCounter">
+        <p> Total Number Of Tasks: <span id="totalTodoCounter">0</span>
+        </p>
+        <p> Completed: <span id="completedTodoCounter">0</span>
+        </p>
+        <p> Pending: <span id="leftTodoCounter">0</span>
+        </p>
+    </div>
+</div>
+<script src="Script.js"></script>
+</body>
+</html>
